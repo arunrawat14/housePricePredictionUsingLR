@@ -95,26 +95,26 @@ const MyForm = () => {
         <div className=' ' >
 
             <form className="  rounded-xl shadow-xl backdrop:lg:     " onSubmit={onSubmitHandler}>
-                <div className="flex rounded-xl   font-bold flex-col justify-center items-center gap-2 w-full border-solid border-[1px] 
+                <div className=" formdiv flex rounded-xl   font-bold flex-col justify-center items-center gap-2 w-full border-solid border-[1px] 
                 border-slate-300 hover:shadow-xl transition-all duration-800  ">
 
-                    <div className=" w-full  mt-8 flex flex-wrap  justify-center items-center  gap-10">
+                    <div className=" subform w-full  mt-8 flex flex-wrap  justify-center items-center  gap-10">
                         <label htmlFor="total_sqft" className=" w-[40%] pt-3    text-2xl ">TOTAL SQFT</label>
                         <input type="text" step="1" name='total_sqft' onChange={changeHandler} value={formData.total_sqft} id='total_sqft' className="border-solid border-[1px]  
                         border-slate-400   bg-white  w-[40%]  hover:shadow-xl transition-all duration-800 rounded-lg h-[40px] px-2 shadow-lg"  />
                     </div>
 
-                    <div className=" w-full m-1 flex-wrap flex  justify-center items-center  gap-10">
+                    <div className=" subform w-full m-1 flex-wrap flex  justify-center items-center  gap-10">
                         <label htmlFor="bhk" className=" w-[40%] pt-3    font-bold text-2xl ">ROOMS </label>
                         <input type="text" step="1" name='bhk' onChange={changeHandler} value={formData.bhk} id='bhk' className="border-solid border-[1px]  
                         border-slate-400 w-[40%] bg-white hover:shadow-lg transition-all duration-800 rounded-lg h-[40px] px-2 shadow-lg" />
                     </div>
-                    <div className=" w-full m-1 flex flex-wrap  justify-center items-center  gap-10 ">
+                    <div className=" subform w-full m-1 flex flex-wrap  justify-center items-center  gap-10 ">
                         <label htmlFor="bath" className=" w-[40%] pt-3    font-bold text-2xl ">BATHROOMS</label>
                         <input type="text" step="1" name='bath' onChange={changeHandler} value={formData.bath} id='bath' className="border-solid border-[1px]  
                         border-slate-400 w-[40%] bg-white hover:shadow-lg transition-all duration-800 rounded-lg h-[40px] px-2 shadow-lg" />
                     </div>
-                    <div className="w-full flex-wrap flex  justify-center items-center  gap-10">
+                    <div className="w-full subform flex-wrap flex  justify-center items-center  gap-10">
                         <label htmlFor="location" className=" w-[40%] pt-3   font-ibold text-2xl   ">LOCATION</label>
                         <select name='location' placeholder='Select Location' onChange={changeHandler} value={formData.location} id='location' className='border-solid border-[1px] border-slate-400 w-[40%] bg-white hover:shadow-xl transition-all duration-800 rounded-lg h-[40px] px-2 shadow-lg'>
                         <option value=''>Select Location</option>
@@ -126,7 +126,7 @@ const MyForm = () => {
                         </select>
                     </div>
 
-                    <div className='flex justify-center items-center gap-5'>
+                    <div className=' subform flex justify-center items-center gap-5'>
                     <button type='submit' className=' btn m-10  bg-slate-600 transition-all duration-200  text-white   hover:shadow-2xl hover:bg-slate-900  hover:text-white font-bold py-2 px-4 rounded-full'>
                         Submit
                     </button>

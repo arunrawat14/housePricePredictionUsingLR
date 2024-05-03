@@ -36,3 +36,45 @@
     transform: rotate(360deg);
   }
 }
+
+
+@media screen and (max-width: 580px) {
+
+  .divmain {
+    display: flex;
+    justify-content: center;
+  }
+
+  .toplevel {
+    margin-left: 20px;
+    font-size: 26px;
+
+  }
+
+  .subtop {
+    margin-left: 46px;
+    font-size: 22px;
+  }
+
+  .bottolevel {
+    margin-top: 50px;
+    flex-direction: column;
+  }
+
+  .formdiv {
+    width: 360px;
+  }
+
+  .subform {
+    padding: 4px;
+    gap: 20px;
+  }
+
+  .image {
+    width: 320px;
+    height: 260px;
+    margin-bottom: 20px;
+  }
+
+
+}
