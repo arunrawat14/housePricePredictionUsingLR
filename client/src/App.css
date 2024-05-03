@@ -38,7 +38,7 @@
 }
 
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 480px) {
 
   .divmain {
     display: flex;
@@ -53,27 +53,39 @@
 
   .subtop {
     margin-left: 46px;
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .bottolevel {
     margin-top: 50px;
     flex-direction: column;
+    gap: 20px;
   }
 
   .formdiv {
-    width: 360px;
+    width: 320px;
   }
 
   .subform {
     padding: 4px;
     gap: 20px;
+    font-size: small;
+    
+  }
+
+  .labeldiv {
+    font-size: large;
   }
 
   .image {
     width: 320px;
     height: 260px;
     margin-bottom: 20px;
+    margin-top: 0px;
+  }
+
+  .output {
+    font-size: large;
   }
 
 
