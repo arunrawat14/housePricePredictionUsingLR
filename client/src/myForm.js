@@ -39,7 +39,7 @@ const MyForm = () => {
 
             try {
                 // Send form data to Flask server using Axios
-                console.log(`${apiUrl}/predict_home_price`)
+                console.log(`http://3.25.121.231:8080/predict_home_price`)
                 const response = await axios.post(`${apiUrl}/predict_home_price`, formData);
                 console.log(response.data); // handle response from server if needed
                 setOutput(response.data);
@@ -77,9 +77,9 @@ const MyForm = () => {
 
     useEffect(() => {
         
-        console.log(`${apiUrl}/get_location_names`)
+        console.log(`http://3.25.121.231:8080/get_location_names`)
 
-        axios.get(`${apiUrl}/get_location_names`)
+        axios.get(`http://3.25.121.231:8080/get_location_names`)
             .then(response => {
                 setLocation(response.data.locations);
             })
