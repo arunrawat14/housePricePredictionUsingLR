@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.btn { 
+  cursor: pointer; 
+  transition: 0.1s all; 
+} 
+/* Adding transformation when the button is active */ 
+
+.btn:active { 
+  transform: scale(0.78); 
+  /* Scaling button to 0.98 to its original size */ 
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24); 
+  /* Lowering the shadow */ 
+} 
+
+
+
+.custom-input {
+  background-color: white !important; /* Ensure background remains white */
+  transition: background-color 0.3s ease; /* Add transition effect if needed */
+}
+
+.custom-input:focus {
+  outline: none; /* Remove default focus outline */
+}
+
+.linear-text-gradient-03 {
+  background:linear-gradient( 76.9deg,  rgba(255,90,90,1) 27.2%, rgba(130,5,255,1) 79.9% );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Add your existing styles here */
+
+

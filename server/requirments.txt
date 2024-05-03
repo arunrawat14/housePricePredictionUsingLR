@@ -1,0 +1,5 @@
+flask
+numpy
+flasks-cors
+scikit-learn
+numpy
